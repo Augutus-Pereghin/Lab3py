@@ -12,10 +12,18 @@ def sum_n(n):
     return 0
 
 def print_n(string, n):
-  print("string")
   if n > 0:
     print_n(string, n-1)
+    print(f"{string}")
   return
 
-def run:
-  input("Enter an int: ")
+def run():
+  n_in = int(input("Enter an int: "))
+  print(f"sum is {sum_n(n_in)}.")
+  s_in = input("Enter a string: ")
+  print_n(s_in, n_in)
+
+
+if __name__ == "__main__":
+  run()
+
